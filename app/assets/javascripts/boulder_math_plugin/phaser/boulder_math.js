@@ -1,4 +1,4 @@
-var game = new Phaser.Game(1024, 768, Phaser.AUTO, 'container');
+var game = new Phaser.Game(1024, 768, Phaser.AUTO, 'boulder-container');
 var score = 0;
 
 //game options
