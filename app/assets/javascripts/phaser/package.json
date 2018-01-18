@@ -1,0 +1,28 @@
+{
+  "name": "boulder_math",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vnguyen13/boulder_math.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vnguyen13/boulder_math/issues"
+  },
+  "homepage": "https://github.com/vnguyen13/boulder_math#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "oauth-1.0a": "^2.2.2",
+    "request": "^2.83.0",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "@orange-games/phaser-input": "^2.0.5"
+  }
+}
