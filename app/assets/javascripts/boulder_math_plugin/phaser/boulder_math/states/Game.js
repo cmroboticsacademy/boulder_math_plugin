@@ -5,8 +5,8 @@ var distance = 0;
 var liftActive = false;
 var position = 0;
 var map,layer,currentLift,currentChallenge,startOfChallenge;
-var offCameraChallenge=true;
-var robotMoving=false;
+var offCameraChallenge = true;
+var robotMoving = false;
 var attempts = 0;
 
 

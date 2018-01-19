@@ -1,5 +1,6 @@
-var Lift = function(game, x, y, maxHeight, physics=true) {
+var Lift = function(game, x, y, maxHeight, physics) {
     key = 'lift';
+    physics = true;
     frame = 0;
     Phaser.Sprite.call(this, game, x,y, key, frame);
     game.physics.enable(this);

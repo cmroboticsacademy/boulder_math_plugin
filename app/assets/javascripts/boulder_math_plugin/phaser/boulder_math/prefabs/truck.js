@@ -1,5 +1,15 @@
-var Truck = function(game, x, y, key='truck', frame, physics=true, camera_follow=true) {
-    Phaser.Sprite.call(this, game, x, y, key, frame);
+var Truck = function(game, x, y, key, frame, physics, camera_follow) {
+
+    if (camera_follow == null) {
+      camera_follow = true;
+    }
+
+    if (physics == null) {
+      physics = true;
+    }
+
+
+    Phaser.Sprite.call(this, game, x, y, 'truck', frame);
     this.scale.setTo(0.75);
     this.animations.add('truck_move', [0,1,2,3,4,5]);
     this.animations.add('truck_move_reverse', [5,4,3,2,1,0]);
@@ -42,7 +52,12 @@ var Truck = function(game, x, y, key='truck', frame, physics=true, camera_follow
     }
 
     //precise movement
-    this.moveTo = function(xPos,checkCalc=true) {
+    this.moveTo = function(xPos,checkCalc) {
+
+        if (checkCalc == null) {
+          checkCalc = true;
+        }
+
         var result = this.x - xPos;
         var multiplier = 6;
         if(result < 0){

@@ -43,7 +43,7 @@ BoulderMath.LoseScene.prototype = {
 
     // false: truck comes up short, half/half
     // true: truck backs up and slightly overshoots, half/half
-    scene1: function (dirReverse=false) {
+    scene1: function (dirReverse) {
       self = this;
       this.truck.anchor.set(0, 1);
 
@@ -100,7 +100,7 @@ BoulderMath.LoseScene.prototype = {
 
     // false: truck comes up WAY short
     // true: truck backs up and completely overshoots
-    scene2: function (dirReverse=false) {
+    scene2: function (dirReverse) {
       self = this;
       this.truck.anchor.set(0, 1);
 
@@ -157,7 +157,7 @@ BoulderMath.LoseScene.prototype = {
 
     // false: truck overshoots a bit, half/half
     // true: trucks backs up just short, half/half
-    scene3: function (dirReverse=false) {
+    scene3: function (dirReverse) {
       self = this;
       this.truck.anchor.set(1);
 
@@ -213,7 +213,7 @@ BoulderMath.LoseScene.prototype = {
 
     // false: truck completely overshoots
     // true: truck backs up very short
-    scene4: function (dirReverse=false) {
+    scene4: function (dirReverse) {
       console.log(dirReverse);
       self = this;
       this.truck.anchor.set(0, 1);

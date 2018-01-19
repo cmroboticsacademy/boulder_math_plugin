@@ -1,5 +1,5 @@
-var Arrow = function (game, x=0, y=0, key='arrow',frame=0) {
-  Phaser.Sprite.call(this, game, x, y, key, frame);
+var Arrow = function (game, x, y, key,frame) {
+  Phaser.Sprite.call(this, game, x, y, 'arrow', 0);
 
   this.scale.setTo(1);
   // this.anchor.setTo(1);
